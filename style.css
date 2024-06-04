@@ -1,0 +1,413 @@
+@font-face {
+  font-family: "Azonix";
+  src: url(/fonts/Azonix.otf);
+}
+@font-face {
+  font-family: "NCL";
+  src: url(/fonts/NCLGraxebeosa-Demo-BF662f2629f4064.otf);
+}
+@font-face {
+  font-family: "Power";
+  src: url(/fonts/PowerGrotesk-Regular.ttf);
+}
+@font-face {
+  font-family: "Thunder";
+  src: url(/fonts/Thunder-BlackLC.otf);
+}
+html{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: #fff;
+}
+.box {
+  border-style: solid;
+  border-image-source: url("/imgs/Rectangle\ 25.png");
+  border-image-slice: 100;
+  border-image-repeat: repeat;
+}
+
+.endbox{
+  width: 1873.596px;
+height: 717.672px;
+transform: rotate(21deg);
+flex-shrink: 0;
+border: 4px solid #FFF;
+}
+.endb2{
+  width: 90%;
+height: 255px;
+flex-shrink: 0;
+border: 4px solid #FFF;
+background: rgba(255, 255, 255, 0.61);
+}
+.c1 {
+  animation: rotate 7s linear infinite;
+}
+.c2 {
+  animation: rotaterev 7s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes rotaterev {
+  0% {
+    rotate: 360deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+.navbtn {
+  width: 162.337px;
+  height: 33.395px;
+  border-radius: 33.395px;
+  border: 0.928px solid #fff;
+}
+
+.l {
+  background: url(/imgs/Rectangle\ 25.png) lightgray 0% 0% / 100px 100px repeat;
+}
+.g {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  font-family: Azonix;
+  font-size: 200.388px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.4;
+  color: black;
+  right: 2%;
+  top: 6%;
+}
+.thumbnail {
+  border: 2px solid transparent;
+  background: url(/imgs/Rectangle\ 25.png) rgb(0, 0, 0) 50% / cover no-repeat;
+  border-radius: 12px;
+}
+.gaming{
+  height: 140vh;
+}
+.wm{
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  opacity: 1.7;
+}
+.txt{
+  font-size: 120px;
+  top: 14%;
+}
+.txt1 {
+  font-size: 52px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+.blog{
+  height: 130vh;
+}
+.design{
+  overflow-x: clip;
+}
+.line{
+  color: #FFF;
+font-family: 'Azonix';
+font-size: 16.267px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+@media (max-width: 1080px){
+  body{
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .navbar{
+    width: 100vw;
+    gap: 6px;
+    justify-content: center;
+  }
+  .navbtn{
+    width: 30%;
+    height: 17%;
+    font-size: .5rem;
+    margin-right: 0%;
+    padding-right: 0;
+  }
+  .t{
+    left: 10%;
+    top: 4%;
+    font-size: 4rem;
+  }
+  .t2{
+    width: 4%;
+    height: 70%;
+    writing-mode: vertical-lr;
+    font-size: 5rem;
+    top: 15%;
+  }
+  .img1{
+    width: 30%;
+  }
+  .img2{
+    width: 80%;
+    rotate: 90deg;
+    left: 50%;
+  }
+  .img3{
+    width: 20%;
+    top: 85%;
+    right: 25%;
+  }
+  .c1{
+    width: 25%;
+    bottom: 2%;
+    right: -0.5%;
+  }
+  .c2{
+    width: 12%;
+    right: 5.7%;
+    bottom: 5.3%;
+  }
+  .provide{
+    flex-direction: column;
+  }
+  .left{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .l{
+    width: 90%;
+    top: 10%;
+  }
+  .l1{
+    display: none;
+  }
+  .lfttxt{
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .wwp{
+    width: 50%;
+    font-size: 2.4rem;
+    margin-top: 2rem;
+  }
+  .probtn{
+    width: 60%;
+    height: 50px;
+    margin-top: 1rem;
+    border-radius: 2px;
+  }
+  .probtn h1{
+    font-size: 1.3rem;
+  }
+  .right{
+    width: 100%;
+  }
+  .cards{
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+  .card{
+    min-width: 90vw;
+    min-height: 45vh;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .work{
+    margin-top: 7rem;
+  }
+  .head{
+    height: 40px;
+    z-index: 50;
+    position: sticky;
+    top: 5%;
+    backdrop-filter: blur(30px);
+    align-items: end;
+  }
+  .whead{
+    font-size: 30px;
+  }
+  .gaming{
+    height: 100vh;
+  }
+  .g{
+    font-size: 90px;
+    top: 3%;
+  }
+  .r1{
+    width: 90%;
+    height: 20%;
+  }
+  .r2{
+    height: 65%;
+  }
+  .thnl1{
+    width: 80%;
+    left: 6%;
+    top: 13%;
+  }
+  .thnl2{
+    width: 60%;
+    right: 13%;
+    top: 38%;
+  }
+  .thnl3{
+    width: 80%;
+    left: 6%;
+    bottom: 20%;
+  }
+  .text1{
+    left: 4%;
+    width: 90%;
+    font-size: 20px;
+    bottom: 6%;
+  }
+  .vall{
+    width: 35%;  
+  }
+  .vall h3{
+    font-size: 14px;
+  }
+  .blog{
+    height: 100vh;
+    margin-top: 8rem;
+  }
+  .txt{
+    font-size: 3.5rem;
+    left: 3%;
+    top: 37%;
+    writing-mode: horizontal-tb;
+  }
+  .rects2{
+    width: 90%;
+    height: 30%;
+    top: 50%;
+  }
+  .rects3{
+    height: 70%;
+  }
+  .txt2{
+    font-size: 60px;
+  }
+  .podcast{
+    margin-top: 4rem;
+  }
+  .rects4{
+    top: 1%;
+  }
+  .txt1{
+    top: 5%;
+  }
+  .ntc{
+    height: 60vh;
+    margin-top: 3rem;
+  }
+  .txt3{
+    font-size: 25px;
+    width: 80%;
+  }
+  .rects5{
+    width: 90%;
+  }
+  .rects6{
+    width: 110%;
+    height: 50%;
+    top: 40%;
+  }
+  .thnl4{
+    width: 80%;
+    top: 47%;
+  }
+
+  .design{
+    margin-top: 0rem;
+    height: 130vh;
+  }
+  .texts{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    line-height: 3.5rem;
+  }
+  .txt6{
+    font-size: 50px;
+  }
+  .endbox{
+    top: 35%;
+    width: 80%;
+    height: 500px;
+  }
+  .endb2{
+    height: 15%;
+  }
+  .footer{
+    height: 300px;
+  }
+  .rightcont{
+    width: 70%;
+    font-size: 1rem;
+  }
+  .en{
+    font-size: 1rem;
+  }
+  .socialimg{
+    width: 30px;
+  }
+  .sitemap{
+    height: 200px;
+    margin-top: 0.2rem;
+  }
+  .social{
+    gap: 18px;
+  }
+  .dtx{
+    font-size: 7.2rem;
+  }
+}
+
+@media (max-height: 660px){
+  .text1{
+    font-size: 30px;
+    bottom: 39.4px;
+  }
+  .thnl3{
+    height: 30%;
+    bottom: 39.4px;
+  }
+  .b1{
+    bottom: 85.8px;
+  }
+  .b2{
+    bottom: 72.6px;
+  }
+  .b3{
+    bottom: 245.6px;
+  }
+  .t{
+    bottom: 158.4px;
+  }
+  .t2{
+    bottom: 46.2px;
+  }
+}
