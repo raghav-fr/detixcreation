@@ -32,15 +32,15 @@ body {
 }
 
 .endbox{
-  width: 1873.596px;
-height: 717.672px;
+  width: 1373.596px;
+height: 629.672px;
 transform: rotate(21deg);
 flex-shrink: 0;
 border: 4px solid #FFF;
 }
 .endb2{
   width: 90%;
-height: 255px;
+height: 190px;
 flex-shrink: 0;
 border: 4px solid #FFF;
 background: rgba(255, 255, 255, 0.61);
@@ -82,7 +82,7 @@ background: rgba(255, 255, 255, 0.61);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   font-family: Azonix;
-  font-size: 200.388px;
+  font-size: 160.388px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -105,11 +105,11 @@ background: rgba(255, 255, 255, 0.61);
   opacity: 1.7;
 }
 .txt{
-  font-size: 120px;
+  font-size: 90px;
   top: 14%;
 }
 .txt1 {
-  font-size: 52px;
+  font-size: 42px;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -386,7 +386,7 @@ line-height: normal;
   }
 }
 
-@media (max-height: 660px){
+@media (max-height: 640px){
   .text1{
     font-size: 30px;
     bottom: 39.4px;
