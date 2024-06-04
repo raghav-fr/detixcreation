@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Azonix";
-  src: url(/fonts/Azonix.otf);
+  src: url(fonts/Azonix.otf);
 }
 @font-face {
   font-family: "NCL";
-  src: url(/fonts/NCLGraxebeosa-Demo-BF662f2629f4064.otf);
+  src: url(fonts/NCLGraxebeosa-Demo-BF662f2629f4064.otf);
 }
 @font-face {
   font-family: "Power";
-  src: url(/fonts/PowerGrotesk-Regular.ttf);
+  src: url(fonts/PowerGrotesk-Regular.ttf);
 }
 @font-face {
   font-family: "Thunder";
-  src: url(/fonts/Thunder-BlackLC.otf);
+  src: url(fonts/Thunder-BlackLC.otf);
 }
 html{
   overflow-x: hidden;
@@ -26,7 +26,7 @@ body {
 }
 .box {
   border-style: solid;
-  border-image-source: url("/imgs/Rectangle\ 25.png");
+  border-image-source: url("imgs/Rectangle\ 25.png");
   border-image-slice: 100;
   border-image-repeat: repeat;
 }
@@ -76,7 +76,7 @@ background: rgba(255, 255, 255, 0.61);
 }
 
 .l {
-  background: url(/imgs/Rectangle\ 25.png) lightgray 0% 0% / 100px 100px repeat;
+  background: url(imgs/Rectangle\ 25.png) lightgray 0% 0% / 100px 100px repeat;
 }
 .g {
   -webkit-text-stroke-width: 1px;
@@ -93,7 +93,7 @@ background: rgba(255, 255, 255, 0.61);
 }
 .thumbnail {
   border: 2px solid transparent;
-  background: url(/imgs/Rectangle\ 25.png) rgb(0, 0, 0) 50% / cover no-repeat;
+  background: url(imgs/Rectangle\ 25.png) rgb(0, 0, 0) 50% / cover no-repeat;
   border-radius: 12px;
 }
 .gaming{
