@@ -397,7 +397,7 @@ line-height: normal;
     font-size: 23px;
   }
 }
-@media (max-height: 700px){
+@media (max-height: 650px){
   .gaming{
     height: 730px;
   }
