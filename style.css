@@ -387,6 +387,10 @@ line-height: normal;
   .dtx{
     font-size: 7.2rem;
   }
+  .line{
+    width: 500vw;
+    top: 20%;
+  }
 }
 
 @media (max-height: 650px){
