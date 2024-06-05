@@ -128,7 +128,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
-@media (max-width: 1080px){
+@media (max-width: 1000px){
   body{
     margin: 0;
     overflow-x: hidden;
@@ -389,14 +389,15 @@ line-height: normal;
   }
 }
 
-@media (max-height: 640px){
-  .text1{
-    font-size: 30px;
-    bottom: 39.4px;
+@media (max-height: 650px){
+  .gaming{
+    height: 730px;
   }
-  .thnl3{
-    height: 30%;
-    bottom: 39.4px;
+  .blog{
+    height: 730px;
+  }
+  .blog{
+    height: 730px;
   }
   .b1{
     bottom: 85.8px;
