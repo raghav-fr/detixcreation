@@ -128,10 +128,13 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+.txt2{
+  font-size: 75px;
+}
 @media (max-width: 1000px){
   body{
     margin: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
   .front{
     height: 95vh;
@@ -185,9 +188,10 @@ line-height: normal;
   }
   .provide{
     flex-direction: column;
+    height: 400vh;
+    justify-content: start;
   }
   .left{
-    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -196,21 +200,25 @@ line-height: normal;
     text-align: center;
   }
   .l{
-    width: 90%;
+    width: 87%;
     top: 10%;
   }
   .l1{
     display: none;
   }
   .lfttxt{
-    width: 100%;
+    width: 90%;
     font-size: 1.5rem;
   }
-  .wwp{
+  .wwp {
     width: 50%;
+    display: flex;
     font-size: 2.4rem;
     margin-top: 2rem;
-  }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
   .probtn{
     width: 60%;
     height: 50px;
@@ -222,14 +230,16 @@ line-height: normal;
   }
   .right{
     width: 100%;
+    position: sticky;
+    top: 42%;
+    overflow: hidden;
   }
   .cards{
-    overflow: hidden;
     flex-direction: row;
     justify-content: start;
     margin-top: 30px;
     margin-bottom: 0px;
-    margin-left: 20px;
+    padding-left: 20px;
   }
   .card{
     min-width: 90vw;
@@ -296,12 +306,12 @@ line-height: normal;
     height: 100vh;
     margin-top: 8rem;
   }
-  .txt{
-    font-size: 3.5rem;
-    left: 3%;
-    top: 37%;
+  .txt {
+    font-size: 2.7rem;
+    left: 23%;
+    top: 38%;
     writing-mode: horizontal-tb;
-  }
+}
   .rects2{
     width: 90%;
     height: 30%;
@@ -311,7 +321,7 @@ line-height: normal;
     height: 70%;
   }
   .txt2{
-    font-size: 60px;
+    font-size: 52px;
   }
   .podcast{
     margin-top: 4rem;
@@ -344,6 +354,7 @@ line-height: normal;
   }
 
   .design{
+    overflow-x: hidden;
     margin-top: 0rem;
     height: 130vh;
   }
@@ -395,6 +406,18 @@ line-height: normal;
 @media (max-width: 321px) {
   .txt3{
     font-size: 23px;
+  }
+  .lfttxt{
+    font-size: 20px;
+  }
+  .probtn h1{
+    font-size: 1rem;
+  }
+  .probtn{
+    height: 40px;
+  }
+  .txt{
+    font-size: 2.3rem;
   }
 }
 @media (max-height: 650px){
