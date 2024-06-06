@@ -158,7 +158,7 @@ const tlne = gsap.timeline({
         trigger:".provide",
         start: "top 40%",
         end: "top 20%",
-        scrub: 3
+        scrub: 2
     }
 })
 
@@ -166,7 +166,8 @@ tlne.to(".wwp div",{
     y:0,
     opacity: 1,
     ease: Power2,
-    stagger: 0.1
+    stagger: 0.1,
+    duration: 0.7
 })
 .from(".probtn",{
     y:100,
