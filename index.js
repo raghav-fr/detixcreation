@@ -203,8 +203,7 @@ if(window.innerWidth<1000){
                 trigger:".provide",
                 start: "top top",
                 end: "bottom bottom",
-                scrub: 2,
-                markers:true
+                scrub: 2
             },
             xPercent: -467
         })
@@ -215,7 +214,6 @@ if(window.innerWidth<1000){
             start: "top top",
             end: "bottom bottom",
             scrub: 2,
-            markers:true
         },
         xPercent: -430
     })
