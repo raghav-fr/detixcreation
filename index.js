@@ -310,7 +310,12 @@ function workanim(){
     })
 }
 
-gsap.set(".conta",{scale: 10})
+if(window.innerWidth<1000){
+    gsap.set(".conta",{scale: 5})
+}
+else{
+    gsap.set(".conta",{scale: 10})
+}
 gsap.to(".conta",{
     scrollTrigger:{
         trigger:".circle",
@@ -338,7 +343,7 @@ gsap.to(".circ1",{
         end : "bottom top",
         scrub: 3
     },
-    rotate: "-100deg",
+    rotate: "-150deg",
     ease: Power2
 })
 gsap.to(".circ2",{
@@ -348,7 +353,7 @@ gsap.to(".circ2",{
         end : "bottom top",
         scrub: 1
     },
-    rotate: "-250deg",
+    rotate: "-270deg",
     ease: Power2
 })
 gsap.to(".circ3",{
@@ -358,7 +363,7 @@ gsap.to(".circ3",{
         end : "bottom top",
         scrub: 5
     },
-    rotate: "180deg",
+    rotate: "190deg",
     ease: Power2,
     duration: 2
 })
