@@ -220,8 +220,149 @@ if(window.innerWidth<1000){
     })
 }
 }
+function scroll(){
+    var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar").style.top = "0";
+    if(window.innerWidth<1000){
+        document.querySelector(".head").style.top = "4%";
+    }
+    else{
+        document.querySelector(".head").style.top = "8%";
+    }
+  } else {
+    document.querySelector(".navbar").style.top = "-60px";
+    document.querySelector(".head").style.top = "0%";
+  }
+  prevScrollpos = currentScrollPos;
+}
+}
+function workanim(){
+    const tl = gsap.timeline({
+        scrollTrigger:{
+            trigger: ".work",
+            start: "top 60%",
+            end: "top 30%",
+            scrub: 1,
+            
+        }
+    })
+    tl.from(".l2",{
+        x: -400,
+        opacity: 0,
+        ease: Power2,
+    
+    })
+    tl.from(".whead",{
+        x: 400,
+        opacity: 0,
+        ease: Power2,
+    
+    })
+    gsap.from(".gaming",{
+        scrollTrigger:{
+            trigger: ".gaming",
+            start:"top 50%",
+            end: "top 40%",
+            scrub: 2
+        },
+        opacity: 0,
+        y: 200,
+        ease: Power2
+    })
+    gsap.from(".blog",{
+        scrollTrigger:{
+            trigger: ".blog",
+            start:"top 60%",
+            end: "top 40%",
+            scrub: 2
+        },
+        opacity: 0,
+        y: 200,
+        ease: Power2
+    })
+    gsap.from(".podcast",{
+        scrollTrigger:{
+            trigger: ".podcast",
+            start:"top 60%",
+            end: "top 40%",
+            scrub: 2
+        },
+        opacity: 0,
+        y: 200,
+        ease: Power2
+    })
+    
+    const tl1 = gsap.timeline({
+        scrollTrigger:{
+            trigger:".work",
+            start:"bottom 60%",
+            end:"bottom top",
+            scrub:2
+        }
+    })
+    
+    tl1.to(".work",{
+        opacity:0,
+        ease: Power2
+    })
+}
 
+gsap.set(".conta",{scale: 10})
+gsap.to(".conta",{
+    scrollTrigger:{
+        trigger:".circle",
+        start: "top top",
+        end: "50% 50%",
+        scrub: 2
+    },
+    scale: 1,
+    ease: Power2
+})
+gsap.to(".circ",{scrollTrigger:{
+    trigger: ".circle",
+    start: "top top",
+    end : "bottom top",
+    scrub: 2
+},
+    rotate: "360deg",
+    ease: Power2
+})
 
-
+gsap.to(".circ1",{
+    scrollTrigger:{
+        trigger: ".circle",
+        start: "top top",
+        end : "bottom top",
+        scrub: 3
+    },
+    rotate: "-100deg",
+    ease: Power2
+})
+gsap.to(".circ2",{
+    scrollTrigger:{
+        trigger: ".circle",
+        start: "top top",
+        end : "bottom top",
+        scrub: 1
+    },
+    rotate: "-250deg",
+    ease: Power2
+})
+gsap.to(".circ3",{
+    scrollTrigger:{
+        trigger: ".circle",
+        start: "top top",
+        end : "bottom top",
+        scrub: 5
+    },
+    rotate: "180deg",
+    ease: Power2,
+    duration: 2
+})
+scroll();
 homeanim();
 provideanim();
+workanim();

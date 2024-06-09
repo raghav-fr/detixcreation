@@ -131,6 +131,12 @@ line-height: normal;
 .txt2{
   font-size: 75px;
 }
+.head{
+    z-index: 50;
+    position: sticky;
+    top: 5%;
+    backdrop-filter: blur(30px);
+}
 @media (max-width: 1000px){
   body{
     margin: 0;
@@ -251,10 +257,11 @@ line-height: normal;
     margin-top: 7rem;
   }
   .head{
+    width: 100vw;
     height: 40px;
     z-index: 50;
     position: sticky;
-    top: 5%;
+    top: 0%;
     backdrop-filter: blur(30px);
     align-items: end;
   }
