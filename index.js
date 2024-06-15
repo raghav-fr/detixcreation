@@ -400,86 +400,88 @@ function ntcanim(){
     
 }
 
-gsap.from(".line",{
-    scrollTrigger:{
-        trigger:".line",
-        start:"top bottom",
-        end: "top 90%",
-        scrub: 2,
-    },
-    opacity: 0,
-    y: 300,
-    ease: Power2
-})
-
-gsap.to(".line1",{
-    scrollTrigger:{
-        trigger:".line",
-        start:"top bottom",
-        end: "bottom top",
-        scrub: 2
-    },
-    x: 400,
-    ease: Power2
-})
-gsap.to(".line2",{
-    scrollTrigger:{
-        trigger:".line",
-        start:"top bottom",
-        end: "bottom top",
-        scrub: 2
-    },
-    x: -400,
-    ease: Power2
-})
-
-clutter2=``
-document.querySelectorAll(".txt6")
-.forEach(function(a){
-    a.textContent.split("")
-    .forEach(function(e){
-        if(e===" ") clutter2+=`<div>&nbsp;</div>`
-        clutter2+=`<div>${e}</div>`
+function designanim(){
+    gsap.from(".line",{
+        scrollTrigger:{
+            trigger:".line",
+            start:"top bottom",
+            end: "top 90%",
+            scrub: 2,
+        },
+        opacity: 0,
+        y: 300,
+        ease: Power2
     })
-    a.innerHTML=clutter2
+    
+    gsap.to(".line1",{
+        scrollTrigger:{
+            trigger:".line",
+            start:"top bottom",
+            end: "bottom top",
+            scrub: 2
+        },
+        x: 400,
+        ease: Power2
+    })
+    gsap.to(".line2",{
+        scrollTrigger:{
+            trigger:".line",
+            start:"top bottom",
+            end: "bottom top",
+            scrub: 2
+        },
+        x: -400,
+        ease: Power2
+    })
+    
     clutter2=``
-})
-
-gsap.from(".txt6 div",{
-    scrollTrigger:{
-        trigger: ".texts",
-        start: "top 70%",
-        end :"top 30%",
-        scrub: 2
-    },
-    x: 100,
-    opacity: 0,
-    ease: Power2,
-    stagger: 0.1
-})
-
-gsap.from(".endbox",{
-    scrollTrigger:{
-        trigger: ".endbox",
-        start: "top 60%",
-        end :"top 0%",
-        scrub: 2
-    },
-    x: 1500,
-    opacity: -6,
-    ease: Power2
-})
-gsap.from(".endb2",{
-    scrollTrigger:{
-        trigger: ".endb2",
-        start: "top 70%",
-        end :"top 45%",
-        scrub: 2
-    },
-    x: -1500,
-    opacity: -6,
-    ease: Power2
-})
+    document.querySelectorAll(".txt6")
+    .forEach(function(a){
+        a.textContent.split("")
+        .forEach(function(e){
+            if(e===" ") clutter2+=`<div>&nbsp;</div>`
+            clutter2+=`<div>${e}</div>`
+        })
+        a.innerHTML=clutter2
+        clutter2=``
+    })
+    
+    gsap.from(".txt6 div",{
+        scrollTrigger:{
+            trigger: ".texts",
+            start: "top 70%",
+            end :"top 30%",
+            scrub: 2
+        },
+        x: 100,
+        opacity: 0,
+        ease: Power2,
+        stagger: 0.1
+    })
+    
+    gsap.from(".endbox",{
+        scrollTrigger:{
+            trigger: ".endbox",
+            start: "top 60%",
+            end :"top 0%",
+            scrub: 2
+        },
+        x: 1500,
+        opacity: -6,
+        ease: Power2
+    })
+    gsap.from(".endb2",{
+        scrollTrigger:{
+            trigger: ".endb2",
+            start: "top 70%",
+            end :"top 45%",
+            scrub: 2
+        },
+        x: -1500,
+        opacity: -6,
+        ease: Power2
+    })
+}
 
 scroll();
 homeanim();
@@ -487,3 +489,4 @@ provideanim();
 workanim();
 circleanim();
 ntcanim();
+designanim();
