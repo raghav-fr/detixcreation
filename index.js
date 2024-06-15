@@ -309,65 +309,181 @@ function workanim(){
         ease: Power2
     })
 }
-
-if(window.innerWidth<1000){
-    gsap.set(".conta",{scale: 5})
-}
-else{
-    gsap.set(".conta",{scale: 10})
-}
-gsap.to(".conta",{
-    scrollTrigger:{
-        trigger:".circle",
+function circleanim(){
+    if(window.innerWidth<1000){
+        gsap.set(".conta",{scale: 5})
+    }
+    else{
+        gsap.set(".conta",{scale: 10})
+    }
+    gsap.to(".conta",{
+        scrollTrigger:{
+            trigger:".circle",
+            start: "top top",
+            end: "50% 50%",
+            scrub: 2
+        },
+        scale: 1,
+        ease: Power2
+    })
+    gsap.to(".circ",{scrollTrigger:{
+        trigger: ".circle",
         start: "top top",
-        end: "50% 50%",
+        end : "bottom top",
         scrub: 2
     },
-    scale: 1,
-    ease: Power2
-})
-gsap.to(".circ",{scrollTrigger:{
-    trigger: ".circle",
-    start: "top top",
-    end : "bottom top",
-    scrub: 2
-},
-    rotate: "360deg",
+        rotate: "360deg",
+        ease: Power2
+    })
+    
+    gsap.to(".circ1",{
+        scrollTrigger:{
+            trigger: ".circle",
+            start: "top top",
+            end : "bottom top",
+            scrub: 3
+        },
+        rotate: "-150deg",
+        ease: Power2
+    })
+    gsap.to(".circ2",{
+        scrollTrigger:{
+            trigger: ".circle",
+            start: "top top",
+            end : "bottom top",
+            scrub: 1
+        },
+        rotate: "-270deg",
+        ease: Power2
+    })
+    gsap.to(".circ3",{
+        scrollTrigger:{
+            trigger: ".circle",
+            start: "top top",
+            end : "bottom top",
+            scrub: 5
+        },
+        rotate: "190deg",
+        ease: Power2,
+        duration: 2
+    })
+}
+
+function ntcanim(){
+    if(window.innerWidth<1000){
+        gsap.from(".ntc",{
+            scrollTrigger:{
+                trigger:".ntc",
+                start:"top 80%",
+                end: "top 50%",
+                scrub: 2
+            },
+            opacity: 0,
+            y: 300,
+            ease: Power2
+        })
+    }
+    
+    else{
+        gsap.from(".ntc",{
+            scrollTrigger:{
+                trigger:".ntc",
+                start:"top 70%",
+                end: "top 30%",
+                scrub: 2
+            },
+            opacity: 0,
+            y: 300,
+            ease: Power2
+        })
+    }
+    
+}
+
+gsap.from(".line",{
+    scrollTrigger:{
+        trigger:".line",
+        start:"top bottom",
+        end: "top 90%",
+        scrub: 2,
+    },
+    opacity: 0,
+    y: 300,
     ease: Power2
 })
 
-gsap.to(".circ1",{
+gsap.to(".line1",{
     scrollTrigger:{
-        trigger: ".circle",
-        start: "top top",
-        end : "bottom top",
-        scrub: 3
+        trigger:".line",
+        start:"top bottom",
+        end: "bottom top",
+        scrub: 2
     },
-    rotate: "-150deg",
+    x: 400,
     ease: Power2
 })
-gsap.to(".circ2",{
+gsap.to(".line2",{
     scrollTrigger:{
-        trigger: ".circle",
-        start: "top top",
-        end : "bottom top",
-        scrub: 1
+        trigger:".line",
+        start:"top bottom",
+        end: "bottom top",
+        scrub: 2
     },
-    rotate: "-270deg",
+    x: -400,
     ease: Power2
 })
-gsap.to(".circ3",{
+
+clutter2=``
+document.querySelectorAll(".txt6")
+.forEach(function(a){
+    a.textContent.split("")
+    .forEach(function(e){
+        if(e===" ") clutter2+=`<div>&nbsp;</div>`
+        clutter2+=`<div>${e}</div>`
+    })
+    a.innerHTML=clutter2
+    clutter2=``
+})
+
+gsap.from(".txt6 div",{
     scrollTrigger:{
-        trigger: ".circle",
-        start: "top top",
-        end : "bottom top",
-        scrub: 5
+        trigger: ".texts",
+        start: "top 70%",
+        end :"top 30%",
+        scrub: 2
     },
-    rotate: "190deg",
+    x: 100,
+    opacity: 0,
     ease: Power2,
-    duration: 2
+    stagger: 0.1
 })
+
+gsap.from(".endbox",{
+    scrollTrigger:{
+        trigger: ".endbox",
+        start: "top 60%",
+        end :"top 0%",
+        scrub: 2
+    },
+    x: 1500,
+    opacity: -6,
+    ease: Power2
+})
+gsap.from(".endb2",{
+    scrollTrigger:{
+        trigger: ".endb2",
+        start: "top 70%",
+        end :"top 45%",
+        scrub: 2
+    },
+    x: -1500,
+    opacity: -6,
+    ease: Power2
+})
+
 scroll();
 homeanim();
 provideanim();
 workanim();
+circleanim();
+ntcanim();
