@@ -368,7 +368,6 @@ function circleanim(){
         duration: 2
     })
 }
-
 function ntcanim(){
     if(window.innerWidth<1000){
         gsap.from(".ntc",{
@@ -399,7 +398,6 @@ function ntcanim(){
     }
     
 }
-
 function designanim(){
     gsap.from(".line",{
         scrollTrigger:{
